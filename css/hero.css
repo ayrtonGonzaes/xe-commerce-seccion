@@ -1,0 +1,633 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3em; /*48px*/
+    text-transform: uppercase;
+    color: #000;
+}
+
+h2 {
+    font-weight: 600 bold;
+    font-size: 1.375em; /*22px*/
+    text-transform: uppercase;
+    color: #000;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.188em; /*19px*/
+    text-transform: uppercase;
+    color: #000;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.063em; /*17px*/
+}
+
+a {
+    font-size: 400;
+    font-size: 1em; /*16px*/
+    color: #000;
+}
+
+.nameProduct a{
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.nameProduct a:hover{
+    color: #545454;
+    transition: all 0.3s ease;
+}
+
+.titleCategory a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.for p{
+    color: #c6c6c6;
+    text-transform: uppercase;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.arrowLeft button{
+    padding: 5px 8px;
+    font-size: 1.3em;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrowLeft button:hover{
+    background: #000;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.arrowLeft button:focus{
+    background: #000;
+    color: #fff;
+}
+
+.arrowRight button{
+    padding: 5px 8px;
+    font-size: 1.3em;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrowRight button:hover{
+    background: #000;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.arrowRight button:focus{
+    background: #000;
+    color: #fff;
+}
+
+.wideProduct{
+    width: 100%;
+}
+
+.wideProduct img{
+    height: 44vh;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product img {
+    height: 44vh;
+    border-radius: 5px;
+}
+
+.image img{
+    height: 50vh;/*55*/
+    border-radius: 5px;
+}
+
+/*Fin de edicciones generales*/
+
+/*Ediccion del header*/
+.alert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.headerExclusive {
+    min-width: 130px;
+    height: 35px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #000;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.headerExclusive:hover {
+    background: #fff;
+    color: #000;
+}
+
+.headerExclusive:focus{
+    background-color: #fff;
+    color: #000;
+}
+
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logoHeader{
+    display: flex;
+    align-items: center;
+}
+
+.logoHeader img {
+    height: 100px;
+}
+
+.logoHeader p {
+    font-weight: 600;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menuHeader{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 2px solid #2a2a2a;
+    border-radius: 5px;
+    padding: 0px 15px;
+    height: 40px;
+    width: 40%;
+    transition: all 0.5s ease;
+}
+
+.search:hover{
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.search:focus{
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+
+.formSearch{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.formSearch > button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.iconSearch{
+    color: #2a2a2a;
+    font-size: 1.2em;
+}
+
+.formSearch > input{
+    height: 30px;
+    width: 100%;
+    border: none;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    text-align: left;
+}
+
+.formSearch > input:hover{
+    width: 100%;
+    text-align: right;
+    transition: all 0.3s ease;
+}
+
+.formSearch > input:focus{
+    text-align: left;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.menuHamburger > button {
+    padding: 3px 10px;
+    background-color: transparent;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.menuHamburger > button:hover{
+    border: 2px solid #b8b8b8;
+}
+ 
+.iconMenu:hover{
+    color: #b8b8b8;
+}
+ 
+.iconMenu{
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+
+.bag > button{
+    padding: 3px 10px;
+    background-color: transparent;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    transition: all 0.3s ease;
+}
+  
+.bag > button:hover{
+    border: 2px solid #b8b8b8;
+}
+  
+.iconBag{
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+  
+.iconBag:hover{
+    color: #b8b8b8;
+}
+/*Fin de la ediccion del header*/
+
+/*Ediccion de la seccion new collection*/
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#newCollection{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.headerCollection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productCollectionOne{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 15px;
+}
+
+.infoProduct{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.productCollectionTwo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 50px;
+}
+
+.imagesCollection{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.advertisement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: #000;
+    height: 50vh;
+    width: 50%;/*19.8*/
+    padding: 0px 15px;
+    border-radius: 5px;
+}
+
+.titleAd h2{
+    color: #fff;
+    text-align: center;
+}
+
+.textAd p {
+    color: #fff;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.btnAd button{
+   min-width:180px;
+   height: 40px;
+   position: relative;
+   padding: 5px 25px;
+   background: transparent;
+   color: #000;
+   font-weight: 600;
+   text-transform: uppercase;
+   text-align: center;
+   border: 1px solid #fff;
+   border-radius: 3px;
+   transition: all 0.3s ease;
+   cursor: pointer;
+   z-index: 0;
+}
+
+.btnAd button::after{
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    bottom: 3px;
+    right: 5px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.btnAd button:hover{
+    color: #545454;
+}
+
+.btnAd button :hover::after{
+    border: 1px solid #545454;
+}
+
+.btnAd button:focus{
+    border: 1px solid #000;
+}
+/*Fin de la ediccion de la seccion new popular*/
+
+/*Ediccion de la seccion popular now*/
+#popularNow{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.headerPopular{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainPopular{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mainPopular .product img{
+    height: 49vh;
+}
+
+.price{
+    display: flex;
+    gap: 0.3rem;
+}
+
+.price span{
+    color: #E32B32;
+}
+
+.footerPopular{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.imagesPopular{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.imageP img{
+    height: 44vh;
+    border-radius: 3px;
+}
+
+.wideImageP{
+    width: 100%;
+}
+
+.wideImageP img{
+    height: 44vh;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.wideImagePopular{
+    display: flex;
+    align-items: center;
+}
+
+.wideImagePopular .wideImageP{
+    width: 85%;
+}
+
+.wideAdvertisement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding:70px;
+}
+
+.titleAdW h2{
+    color: #000;
+    text-align: start;
+}
+
+.textAdW p {
+    color: #000;
+    text-align: start;
+    font-size: 0.9em;
+    width: 90%;
+}
+
+.btnAdW button{
+    min-width: 130px;
+    height: 40px;
+    position: relative;
+    padding: 5px 35px;
+    background: #fff;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    z-index: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btnAdW button::after{
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    bottom: 3px;
+    right: 5px;
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 3px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.btnAdW button:hover{
+    color: #545454;
+}
+
+.btnAdW button:hover::after{
+    border: 1px solid #545454;
+}
+
+.btnAdW button:focus{
+    border: 1px solid #000;
+}
+/*Fin de la ediccion de la seccion popular now*/
+
+/*Ediccion de la  new arrivals*/
+#newArrivals{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.headerArrivals{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainArrivals{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.productArrivalOne{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.fliaOne{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.productArrivalTwo .product img{
+    height: 96vh;
+}
+
+.category{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.headerCategory{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.men .arrowRight button{
+    border: none;
+    font-size: 2em;
+}
+
+.kids .arrowRight button{
+    border: none;
+    font-size: 2em;
+}
+
+.women .arrowRight button{
+    border: none;
+    font-size: 2em;
+}
+
+.imageCategory img{
+    height: 65.6vh;
+    border-radius: 3px;
+}
+/*Fin de la ediccion category*/

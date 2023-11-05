@@ -1,0 +1,65 @@
+@media screen and (min-width:768px) and (max-width:1023px){
+    .product{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .product img{
+        height: 50vh;
+        width: 100%;
+    }
+
+    .wideProduct img{
+        height: 50vh;
+    }
+
+
+    .containerHeader{
+        width: 90%;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #newCollection{
+        width: 90%;
+    }
+
+
+    .image{
+        width: 100%;
+    }
+
+    .image img{
+        height: 50vh;
+        width: 100%;
+    }
+
+    .advertisement{
+        height: 50vh;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    #popularNow{
+        width: 90%;
+    }
+
+
+    .wideImagePopular .wideImageP{
+        width: 100%;
+    }
+
+    #newArrivals{
+        width: 90%;
+    }
+
+    .productArrivalTwo .product img{
+        height: 110vh;
+    }
+
+    .imageCategory img{
+        height: 40.6vh;
+    }
+}
